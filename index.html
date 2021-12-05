@@ -1,66 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>LandingPage</title>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>LandingPage</title>
-  <link rel="stylesheet" href="index.css">
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-</head>
+        <link rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+        crossorigin="anonymous">
+        <link rel="stylesheet" href="Index.css">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <div class="logo">
+                    <img src="/ProjectsBeginners/img/logo1.jpg" alt="">
+                </div>
 
-<body>
-  <div class="container">
-    <header>
-      <div class="logo">
-        <img src="logo.jpg" alt="">
-      </div>
+                <nav>
+                    <div class="hamburger">
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                    </div>
+                    <ul class="links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Procedures</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <section class="main">
+                <div class="content">
+                    <!-- <img src="img/images_(1).jfif.jpeg" alt=""> -->
+                    <h5 data-aos="fade-right" data-aos-easing="ease-in-sine"
+                        data-aos-duration="1500">Treat Your Skin</h5>
+                    <h1 data-aos="fade-left" data-aos-easing="linear"
+                        data-aos-duration="1500">Healthy Skin Is Always In Style</h1>
+                    <h4 data-aos="fade-right" data-aos-easing="linear"
+                        data-aos-duration="1500">We are ready for your skin care
+                        help</h4>
+                    <button class="mainBtn" data-aos="fade-left"
+                        data-aos-easing="linear"
+                        data-aos-duration="1500">Learn More</button>
+                </div>
+            </section>
 
-      <nav>
-        <div class="hamburger">
-          <div class="line"></div>
-          <div class="line"></div>
-          <div class="line"></div>
+            <section class="about">
+                <!-- <div> -->
+                <div class="aboutImage" data-aos="fade-right"
+                    data-aos-easing="ease-in-sine"
+                    data-aos-duration="1500">
+                    <img src="https://source.unsplash.com/vTL_qy03D1I"
+                        alt="">
+                </div>
+                <div class="aboutContent">
+                    <h2 data-aos="fade-down" data-aos-easing="ease"
+                        data-aos-duration="800">About us</h2>
+                    <h1 data-aos="fade-down" data-aos-easing="ease"
+                        data-aos-duration="800">Welcome!</h1>
+                    <p data-aos="fade-left" data-aos-easing="ease"
+                        data-aos-duration="800">Lorem, ipsum dolor sit amet
+                        conoptio labore
+                        provident, atque fugit sapiente porro similique
+                        e est vel magnam quis ea
+                        dignissimos architecto! Omnis reiciendi
+                        porro nam?</p>
+                    <p data-aos="fade-left"
+                        data-aos-duration="800">Lorem ipsum, dolor sit amet
+                        consectetur adipisicing elit.
+                        Voluptatum culpa porro reprehenderit dolore tempora
+                        adipisci alias provident accusantium libero veniam.</p>
+                    <div class="btn">
+
+                        <button class="aboutBtn" data-aos="fade-up"
+                            data-aos-easing="ease"
+                            data-aos-duration="700">Know More</button>
+                    </div>
+                    <!-- </div> -->
+                </div>
+            </section>
+
+
+            <section class="common">
+                <div class="commonContent" data-aos="fade-right"
+                data-aos-easing="ease"
+                data-aos-duration="700">
+                    <h1>Common Problems</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        Labore, et.</p>
+                    <ul>
+                        <li><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                            Dry Skin
+                        </li>
+                        <li><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                            Oily Skin
+                        </li>
+                        <li><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                            Sunburn
+                        </li>
+                        <li><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                            Cold Sores
+                        </li>
+                        <li><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                            Acne
+                        </li>
+                        <li><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                            Diaper Rash
+                        </li>
+                        <li><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                            Hives
+                        </li>
+                    </ul>
+                </div>
+                <div class="commonImage">
+                    <img src="img/images (2).jfif" data-aos="fade-up"
+                    data-aos-easing="ease"
+                    data-aos-duration="700" class =" img1"alt="">
+                    <img src="img/images (3).jfif" data-aos="fade-down"
+                    data-aos-easing="ease"
+                    data-aos-duration="700" class="img2" alt="">
+                </div>
+            </section>
         </div>
-        <ul class="links">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <!-- <li><a href="#">Services</a></li> -->
-          <li><div class="dropdown">
-            <button class="dropbtn">Services
-              <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content">
-              <a href="service_1.html">By concern</a>
-              <a href="service_2.html">Acc to</a>
-              <a href="service_3.html">nhi pata </a>
-            </div>
-          </div>  </li>
-          <li><a href="#">Procedures</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
-    <section class="main">
-      <div class="content">
-        <h5 data-aos="fade-right" data-aos-easing="ease-in-sine" data-aos-duration="1500">Treat Your Skin</h5>
-        <h1 data-aos="fade-left" data-aos-easing="linear" data-aos-duration="1500">Healthy Skin Is Always In Style</h1>
-        <h4 data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1500">We are ready for your skin care help</h4>
-      </div>
-    </section>
-  </div>
 
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
-  <script>
-    AOS.init({
-      //   offset:400,
-      duration: 1000
-    });
-  </script>
-  <script src="index.js"></script>
-</body>
-
+        <script>
+          AOS.init({
+        //   offset:400,
+          duration:1000
+      });
+    </script>
+        <script src="Index.js"></script>
+    </body>
 </html>
+
+<!-- https://unsplash.com/photos/vTL_qy03D1I -->
+<!-- https://source.unsplash.com/9THwaaH18rI -->
