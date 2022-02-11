@@ -1,0 +1,307 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+  /* background:linear-gradient(to right,#8adf59,#9de474,#B1E693,#8adf59 ); */
+  /* background-size: cover; */
+  background:linear-gradient(to right,#8adf59,#9de474,#B1E693 );
+}
+header{
+background:linear-gradient(to right,#8adf59,#9de474,#B1E693 );
+width: 100%;
+height: 22vh;
+
+}
+.menu-items li a {
+font-family: 'Gideon Roman', cursive;
+  margin-bottom: 1.2rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+   line-height: 50px;
+   color:#394936;
+}
+.menu-items li{
+list-style-type: none;}
+.menu-items {
+   background:linear-gradient(to right,#8adf59,#9de474,#B1E693 );
+   
+  z-index: 3;
+  position: fixed;
+  padding-top: 120px;
+  /* box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5); */
+  height: 100vh;
+  width: 100%;
+  transform: translate(-150%);
+  display: flex;
+  flex-direction: column;
+  margin-left: -40px;
+  padding-left: 50px;
+  transition: transform 0.5s ease-in-out;
+  text-align: center;
+}
+
+.logo{
+   position: absolute;
+    width:146px;
+	margin: 12px;
+}
+.first_w{
+      background:linear-gradient(to right,#8adf59,#9de473,#B1E693 );
+height: 90vh;
+         width: 100%;
+		 height: 100%;
+		 
+}
+/* hand image  */
+.p1{
+height:95%;
+display:block;
+position:absolute;
+bottom:0;
+right:70px;
+}
+/* heading -skin concerns */
+/* khaab,baari,fallin for u ,ik tera,nira ishq,laare*/
+.skincon{
+font-family: 'Dancing Script', cursive;
+width:500px;
+position:absolute;
+top:100px;
+left:20vw;
+color: #0B4619;
+-webkit-text-stroke-width: 1px;
+ -webkit-text-stroke-color: black;
+ text-shadow: 5px 5px 8px #116530;
+ font-size: 85px;
+ text-align: center;
+}
+.quote{
+font-family: 'Dancing Script', cursive;
+width:50%;
+position:absolute;
+top:50%;
+text-align: center;
+font-size: 25px;
+left:20vw;
+-webkit-text-stroke-color: black;
+text-shadow: 5px 5px 8px #116530;
+}
+.learn_more_btn {
+    display: block;
+    position: absolute;
+   right:100px;
+ bottom:20px;
+    font-family: 'Moon Dance', cursive;
+	box-shadow:inset -29px 30px 34px 2px #153d0a;
+	background:linear-gradient(to bottom, #0bc23c 5%, #193d06 100%);
+	background-color:#0bc23c;
+	border-radius:9px 1px 9px 1px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:25px;
+	padding:5px 10px;
+	text-decoration:none;
+	text-shadow:-38px -25px 50px #082e02;
+}
+.learn_more_btn:hover {
+	background:linear-gradient(to bottom, #193d06 5%, #0bc23c 100%);
+	background-color:#193d06;
+}
+
+
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+}
+#menu_checkbox {
+  display: none;
+}
+.menu_services{
+ position: fixed;
+  /* position:absolute; */
+  z-index: 10;
+  top: 5%;
+  right: 2.5%;
+  /* left: 0; */
+  /* margin: 0 auto; */
+  display: block;
+  width: 30px;
+  height: 30px;
+  /* transform: translateY(-50%); */
+  transition: 0.3s ease transform;
+  cursor: pointer;
+}
+
+label div {
+  width: 6px;
+  height: 6px;
+  background-color: #082e02;
+  margin-left: 0;
+  margin-bottom: 6px;
+  border-radius: 4px;
+  transition: 0.3s ease width, 0.3s ease margin-left, 0.3s ease margin-bottom,
+    0.3s ease background-color;
+}
+.card h3{
+  font-family: 'Gideon Roman', cursive;
+ 
+}
+/* label div:first-child {
+  width: 27px;
+} */
+
+.line1 {
+   width: 27px;
+}
+.line2 {
+  width: 15px;
+}
+
+.line3{
+  width: 27px;
+  margin-bottom: 0;
+}
+
+
+.nv input[type="checkbox"]:checked ~ .menu-items {
+  transform: translateX(0);
+}
+
+.nv input[type="checkbox"]:checked  ~ .menu_services .line1 {
+   width: 35px;
+  transform: rotate(45deg);
+}
+.nv input[type="checkbox"]:checked ~ .menu_services .line2 {
+  transform: scaleY(0);
+}
+.nv input[type="checkbox"]:checked ~ .menu_services .line3 {
+   width: 35px;
+  transform: rotate(-45deg);
+}
+.nv input[type="checkbox"]:checked ~ .logo{
+  display: none;
+}
+.nv .hamburger-lines .line1 {
+  transform-origin: 0% 0%;
+  transition: transform 0.4s ease-in-out;
+}
+.nv .hamburger-lines.line2 {
+  transition: transform 0.2s ease-in-out;
+}
+.nv .hamburger-lines .line3 {
+  transform-origin: 0% 100%;
+  transition: transform 0.4s ease-in-out;
+}
+#menu_checkbox:checked + label div {
+  /* width: 6px;
+  margin-left: 12px;
+  margin-bottom: 3px;
+  background-color: #B1E693; */
+}
+.modal-dialog{
+  width:75%;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 350px;
+  margin: auto;
+  text-align: center;
+  font-family: 'Moon Dance', cursive;
+  margin: 10px;
+}
+#skin_heading{
+z-index: 2;
+
+}
+.sticky {
+   background:linear-gradient(to right,#8adf59,#9de473,#B1E693 );
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+.sticky + .concern_grid_container {
+  padding-top: 150px;
+}
+.concern_grid_container {
+  padding: 16px;
+}
+.concern_grid_container{
+  display:grid;
+  grid-template-columns: auto auto auto;
+  padding: 20px;
+  background:linear-gradient(to right,#8adf59,#9de474,#B1E693 );
+}
+.price {
+  color: grey;
+  font-size: 22px;
+}
+.card img{
+  height: 250px;
+}
+.card button {
+  /* fami; */
+  border: none;
+  outline: 0;
+  /* padding: 12px; */
+  margin-top: 0;
+  color: #ffffff;
+  background-color: black;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 22px;
+  
+}
+.modal-content{
+position: relative;
+right: 15vw;
+
+}
+.card button:hover {
+  opacity: 0.7;
+}
+.line{
+  /* margin: 0; */
+  border-bottom: none;
+  border-top: dotted #4c8d27 8px;
+  width: 8%;
+margin: auto;
+    
+}
+
+@media only screen and (max-width: 600px) {
+.p1{
+  display: none;
+}
+.skincon{
+width:100vw;
+/* position:absolute; */
+top:130px;
+left:0;
+/* background-image: url("IMAGES/B3.jpg"); */
+/* opacity: 0.3; */
+/* background:linear-gradient(to top,#9de473,#7fee3f,#9de473  ); */
+ font-size: 50px;
+}
+.quote{
+
+width:100%;
+position:absolute;
+top:30%;
+/* text-align: center; */
+font-size: 15px;
+left:0;
+-webkit-text-stroke-color: black;
+text-shadow: 5px 5px 8px #116530;
+}
+.logo{
+  width:110px;
+}
+}
+        
